@@ -4,9 +4,9 @@ import QtQuick.Window 2.2
 Window {
     id: window
     visible: true
-    width: 640
-    height: 480
-    title: qsTr("Hello World")
+    width: 400
+    height: 400
+    flags: Qt.FramelessWindowHint
 
     Text {
         id: element
@@ -30,10 +30,10 @@ Window {
         id: element1
         x: 240
         y: 423
-        text: qsTr("Done Loading")
+        text: ctxObject.status
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 10
-        font.pixelSize: 18
+        font.pixelSize: 14
     }
 }
